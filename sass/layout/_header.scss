@@ -1,0 +1,27 @@
+.header {
+    background: var(--clr-light);
+    width: 100%;
+    
+
+    padding: 1rem 0;
+
+    &.scrolled {
+        box-shadow: var(--box-shadow-1);
+        position: fixed;
+        z-index: 50;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 20rem;
+
+        &--img {
+            width: 20rem;
+        }
+    }
+}

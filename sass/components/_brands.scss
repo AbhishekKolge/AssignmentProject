@@ -1,0 +1,33 @@
+.brands {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        width: 20rem;
+        padding: 2rem;
+        border: 1px solid var(--clr-secondary-2);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background .2s;
+
+        &:hover {
+            background: var(--clr-secondary);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

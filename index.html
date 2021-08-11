@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Fashion Designer</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="container header__container nav">
+            <a href="#" class="header__logo"><img src="./img/logo.png" alt="logo" class="header__logo--img"></a>
+            <div class="nav__items">
+                <div class="nav__item">
+                    <form class="nav__form">
+                        <input type="text" class="nav__form--search" placeholder="Search Products...">
+                        <button type="submit" class="nav__form--btn"><i class="fas fa-search nav__form--btn-icon"></i></button>
+                    </form>
+                </div>
+                <a href="#" class="nav__item">
+                    <div class="nav__item--cart">
+                        <i class="fas fa-shopping-bag nav__item--cart-icon"></i>
+                        <div class="nav__item--cart-items">0</div>
+                    </div>
+                    <span class="nav__item--text">Bag</span>
+                </a>
+                <a href="#" class="nav__item">
+                    <i class="fas fa-user nav__item--cart-icon"></i>
+                    <span class="nav__item--text">Profile</span>
+                </a>
+            </div>
+        </nav>
+       <div id="nav-btn" class="mobile__nav-icon">
+            <div id="nav-icon" class="nav-bar"></div>
+        </div>
+        <div id="mobile-nav" class="mobile__nav">
+            <a href="#" class="mobile__nav-option"><i class="fas fa-user"></i> Profile</a>
+            <a href="#" class="mobile__nav-option"><i class="fas fa-shopping-bag"></i> Bag
+            </a>
+            <form class="nav__form">
+                <input type="text" class="nav__form--search" placeholder="Search Products...">
+                <button type="submit" class="nav__form--btn">
+                    <i class="fas fa-search nav__form--btn-icon"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="categories section">
+            <div class="container categories__container">
+                <div class="section__header-wrapper">
+                    <h2 class="section__header">Categories</h2>
+                    <a href="#" class="section__link">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="categories__items">
+                    <figure class="categories__item">
+                        <img src="./img/mens.jpg" alt="mens-item-img" class="categories__item--img">
+                        <figcaption class="categories__item--text">Mens</figcaption>
+                    </figure>
+                    <figure class="categories__item">
+                        <img src="./img/kids.jpg" alt="kids-item-img" class="categories__item--img">
+                        <figcaption class="categories__item--text">Kids</figcaption>
+                    </figure>
+                    <figure class="categories__item">
+                        <img src="./img/womens.jpg" alt="womens-item-img" class="categories__item--img">
+                        <figcaption class="categories__item--text">Womens</figcaption>
+                    </figure>
+                    <figure class="categories__item">
+                        <img src="./img/footwear.jpg" alt="footwear-item-img" class="categories__item--img">
+                        <figcaption class="categories__item--text">Footwear</figcaption>
+                    </figure>
+                    <figure class="categories__item">
+                        <img src="./img/accessories.jpg" alt="accessories-item-img" class="categories__item--img">
+                        <figcaption class="categories__item--text">Accessories</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="slider section">
+            <div class="slider__container">
+                <img src="./img/cover-1.jpg" alt="offer-of-the-day" class="slider__img active">
+                <img src="./img/cover-2.jpg" alt="offer-of-the-day" class="slider__img">
+                <img src="./img/cover-3.jpg" alt="offer-of-the-day" class="slider__img">
+                <div id="slider-prev" class="slider__icon slider__prev-icon"><i class="fas fa-chevron-left"></i></div>
+                <div id="slider-next" class="slider__icon slider__next-icon"><i class="fas fa-chevron-right"></i></div>
+                <div class="slider__indicator-wrapper">
+                    <div class="slider__indicator showing"></div>
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator"></div>
+                </div>
+            </div>
+        </section>
+        <section class="deals section">
+            <div class="container deals__container">
+                <div class="section__header-wrapper">
+                    <h2 class="section__header">Deals of the day</h2>
+                    <a href="#" class="section__link">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="deals__items--wrapper">
+                    <div id="deals-items" class="deals__items">
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/t-shirt.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Black Color</span>
+                                <h4 class="item__name">T-Shirt</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 120 <span>&#8377 <span>250</span></span></div>
+                                    <button class="item__purchase--btn stock__out">Out of stock</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/jeans.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">50% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Blue Color</span>
+                                <h4 class="item__name">Jeans</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 250 <span>&#8377 <span>500</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/watch.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Leather</span>
+                                <h4 class="item__name">Wrist Watch</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 300 <span>&#8377 <span>750</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/jacket.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Large Size</span>
+                                <h4 class="item__name">jacket</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 200 <span>&#8377 <span>450</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/purse.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Light Brown Color</span>
+                                <h4 class="item__name">Purse</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 400 <span>&#8377 <span>850</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/shoes.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Red Color</span>
+                                <h4 class="item__name">Shoes</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 275 <span>&#8377 <span>480</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/t-shirt.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Black Color</span>
+                                <h4 class="item__name">T-Shirt</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 120 <span>&#8377 <span>250</span></span></div>
+                                    <button class="item__purchase--btn stock__out">Out of stock</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/jeans.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">50% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Blue Color</span>
+                                <h4 class="item__name">Jeans</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 250 <span>&#8377 <span>500</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/watch.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Leather</span>
+                                <h4 class="item__name">Wrist Watch</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 300 <span>&#8377 <span>750</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/jacket.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Large Size</span>
+                                <h4 class="item__name">jacket</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 200 <span>&#8377 <span>450</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/purse.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Light Brown Color</span>
+                                <h4 class="item__name">Purse</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 400 <span>&#8377 <span>850</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="last-deal-item" class="deals__item">
+                            <figure class="deals__item-img">
+                                <img src="./img/shoes.jpg" alt="deals-item">
+                                <figcaption class="deals__item-offer">10% Off</figcaption>
+                            </figure>
+                            <div class="deals__item-info">
+                                <span class="item__specification">Red Color</span>
+                                <h4 class="item__name">Shoes</h4>
+                                <div class="item__purchase">
+                                    <div class="item__purchase--price">&#8377 275 <span>&#8377 <span>480</span></span></div>
+                                    <button class="item__purchase--btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="deals-prev" class="deals__icon deals__prev-icon"><i class="fas fa-chevron-left"></i></div>
+                <div id="deals-next" class="deals__icon deals__next-icon"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </section>
+        <section class="brands section">
+            <div class="container brands__container">
+                <div class="section__header-wrapper">
+                    <h2 class="section__header">Brands</h2>
+                    <a href="#" class="section__link">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="brands__list">
+                    <div class="brands__item">
+                        <img src="./img/brand-1.png" alt="levi's logo">
+                    </div>
+                    <div class="brands__item">
+                        <img src="./img/brand-2.png" alt="nike logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__categories">
+                <h4 class="about__categories-heading">Categories</h4>
+                <div class="about__categories-content">
+                    <a href="#">Mens</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Womens</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Accessories</a>
+                </div>
+            </div>
+            <div class="about__categories">
+                <h4 class="about__categories-heading">My Account</h4>
+                <div class="about__categories-content">
+                    <a href="#">Log In</a>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+            <div class="about__categories">
+                <h4 class="about__categories-heading">About</h4>
+                <div class="about__categories-content">
+                    <p>Fashion Designer is the leading fashion ecommerce website in India.</p>
+                </div>
+            </div>
+            <div class="about__categories">
+                <h4 class="about__categories-heading">Contacts</h4>
+                <div class="about__categories-content">
+                    <span>Address: Mumbai, Maharashtra</span>
+                    <span>Phone:</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="container footer__container">
+            <div class="footer__company-info">
+                <a href="#" class="footer__logo"><img src="./img/logo.png" alt="logo" class="footer__logo--img"></a>
+                <span class="footer__copyrights">
+                    &copy; Storeinsta 2020. All Rights Reserved.
+                </span>
+                <div class="footer__payments-logos">
+                    <img src="./img/payment-logo-1.png" alt="razorpay logo">
+                    <img src="./img/payment-logo-2.png" alt="visa logo">
+                    <img src="./img/payment-logo-3.png" alt="mastercard logo">
+                </div>
+            </div>
+            <div class="footer__refund">
+                <h5 class="footer__refund--heading">Refund Policy</h5>
+                <div class="footer__refund--wrapper">
+                    <span>Powered By</span>
+                    <div class="footer__refund--logo"><i class="fas fa-store footer__refund--icon"></i></div>
+                    <span>Storeinsta</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

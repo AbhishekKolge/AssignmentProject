@@ -1,0 +1,77 @@
+.footer {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__company-info {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        @include respond(47.75em) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    &__logo {
+
+        &--img {
+            width: 18rem;
+        }
+    }
+
+    &__payments-logos {
+        display: flex;
+        gap: .5rem;
+        margin-left: auto;
+
+        @include respond(47.75em) {
+            margin-left: 0;
+        }
+
+        img {
+            width: 8rem;
+            height: 3rem;
+            object-fit: contain;
+        }
+    }
+
+    &__refund {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        &--heading {
+            font-size: 1.8rem;
+        }
+
+        &--wrapper {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-weight: 600;
+
+            span:last-child {
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+
+        &--logo {
+            background: rgb(20, 207, 198);
+            color: var(--clr-light);
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+    }
+}
