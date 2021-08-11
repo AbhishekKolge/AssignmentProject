@@ -10,6 +10,8 @@ const dealsPrev = document.getElementById('deals-prev')
 const dealsNext = document.getElementById('deals-next')
 const dealsItem = document.querySelector('.deals__item')
 const lastDealItem = document.getElementById('last-deal-item')
+const headerEl = document.getElementById('header-section')
+const categoriesSection = document.getElementById('categories-section')
 
 let scroll = ''
 
@@ -86,12 +88,27 @@ const observer = new IntersectionObserver((entries) => {
             dealsNext.style.visibility = 'visible'
         } else {
             dealsNext.style.visibility = 'hidden'
-            console.log('dasd')
         }
     })
 }, options)
 
 observer.observe(lastDealItem)
+
+const options2 = {
+    rootMargin: '200px'
+}
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            headerEl.classList.add('scrolled')
+        } else {
+            headerEl.classList.remove('scrolled')
+        }
+    })
+}, options2)
+
+observer2.observe(categoriesSection)
 
 let itemWidth = dealsItem.offsetWidth
 let nextValue = itemWidth
@@ -102,13 +119,11 @@ const slideLeft = () => {
     }
     nextValue += itemWidth
     dealsItems.style.transform = `translateX(-${nextValue}px)`
-    console.log(nextValue)
 }
 
 const slideRight = () => {
     nextValue -= itemWidth
     dealsItems.style.transform = `translateX(-${nextValue}px)`
-    console.log(nextValue)
 }
 
 navBtn.addEventListener('click', toggleNav)
